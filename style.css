@@ -16,14 +16,7 @@
   
   :root {
   
-    --color-primary: linear-gradient(
-      to right,
-      #5757cd 0%,
-      #8654c8 20%,
-      #c851bf 40%,
-      #e0869d 60%,
-      #f2af83 100%
-    );
+    --color-primary: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     --color-primary: #5757cd;
     --color-success: #33d6a6;
     --color-warning: #f1c40f;
@@ -43,6 +36,7 @@
     --container-width-sm: 94%;
   
     --transition: all 400ms ease;
+    margin-bottom: 10rem;
   }
   
   body {
@@ -69,7 +63,6 @@
   
   section h2 {
     text-align: center;
-    margin-bottom: 4rem;
   }
   
   h1,
@@ -114,14 +107,8 @@
     display: inline-block;
     background: var(--color-white);
     /* background: linear-gradient(to right, brown 0%, #e1954e 51%, #fcbe85 100%); */
-    background: linear-gradient(
-      to right,
-      #5757cd 0%,
-      #8654c8 20%,
-      #c851bf 40%,
-      #e0869d 60%,
-      #f2af83 100%
-    );
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+    background-color: #5757cd;
     color: #fff;
     transition: 0.5s;
     padding: 1rem 2rem;
@@ -147,14 +134,8 @@
   
   /* change navbar styles on scroll using js */
   .window-scroll {
-    background: linear-gradient(
-      to right,
-      #5757cd 0%,
-      #8654c8 20%,
-      #c851bf 40%,
-      #e0869d 60%,
-      #f2af83 100%
-    );
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); */
+    background: #121212;
     /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); */
   }
   .nav_icon {
@@ -228,14 +209,7 @@
   }
   
   .header__left .gradient {
-    background: linear-gradient(
-      to right,
-      #5757cd 0%,
-      #8654c8 20%,
-      #c851bf 40%,
-      #e0869d 60%,
-      #f2af83 100%
-    );
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -283,14 +257,8 @@
     z-index: 1;
     /* box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3); */
     transition: var(--transition);
-    background: linear-gradient(
-      to right,
-      #5757cd 0%,
-      #8654c8 20%,
-      #c851bf 40%,
-      #e0869d 60%,
-      #f2af83 100%
-    );
+    background-color: #5757cd;
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
   }
   
   .category__icon {
@@ -354,14 +322,7 @@
   .achievement__card:hover {
     /* box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3); */
     background: var(--team-hover);
-    background: linear-gradient(
-      to right,
-      #5757cd 0%,
-      #8654c8 20%,
-      #c851bf 40%,
-      #e0869d 60%,
-      #f2af83 100%
-    );
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   }
   
   .achievement__icon {
@@ -930,7 +891,7 @@
   }
   
   .reveal.active {
-    transform: translateY(0px);
+    transform: translateY(10rem);
     opacity: 1;
   }
   
@@ -939,4 +900,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .categories_data{
+    margin-top: 2rem;
+    margin-bottom: auto;
+  }
+
+  .community__achievements{
+    padding: 6rem 0rem;
   }
